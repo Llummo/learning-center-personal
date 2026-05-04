@@ -1,22 +1,27 @@
-
-import {Component, inject} from '@angular/core';
-import {FormBuilder, FormControl, ReactiveFormsModule, Validators} from '@angular/forms';
-import {ActivatedRoute, Router} from '@angular/router';
-import {LearningStore} from '../../../application/learning.store';
-import {Category} from '../../../domain/model/category.entity';
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {TranslatePipe} from '@ngx-translate/core';
+import { Component, inject } from '@angular/core';
+import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { LearningStore } from '../../../application/learning.store';
+import { Category } from '../../../domain/model/category.entity';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { TranslatePipe } from '@ngx-translate/core';
 
 /**
  * Creates and edits category entities.
  */
 @Component({
   selector: 'app-category-form',
-  imports: [MatFormFieldModule, MatInputModule, MatButtonModule, ReactiveFormsModule, TranslatePipe],
+  imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    ReactiveFormsModule,
+    TranslatePipe,
+  ],
   templateUrl: './category-form.html',
-  styleUrl: './category-form.css'
+  styleUrl: './category-form.css',
 })
 export class CategoryForm {
   private fb = inject(FormBuilder);
@@ -28,7 +33,7 @@ export class CategoryForm {
    * Form group for the category form.
    */
   form = this.fb.group({
-    name: new FormControl<string>('', { nonNullable: true, validators: [Validators.required] })
+    name: new FormControl<string>('', { nonNullable: true, validators: [Validators.required] }),
   });
 
   /**
@@ -45,7 +50,7 @@ export class CategoryForm {
    * Creates an instance of CategoryForm and initializes the form based on route parameters.
    */
   constructor() {
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe((params) => {
       this.categoryId = params['id'] ? +params['id'] : null;
       this.isEdit = !!this.categoryId;
       if (this.isEdit && this.categoryId) {
@@ -66,7 +71,7 @@ export class CategoryForm {
 
     const category: Category = new Category({
       id: this.categoryId ?? 0,
-      name: this.form.value.name!
+      name: this.form.value.name!,
     });
 
     if (this.isEdit) {
@@ -78,4 +83,3 @@ export class CategoryForm {
     this.router.navigate(['learning/categories']).then();
   }
 }
-

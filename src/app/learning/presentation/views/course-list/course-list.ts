@@ -1,8 +1,7 @@
-
-import {AfterViewChecked, Component, computed, inject, ViewChild} from '@angular/core';
-import {LearningStore} from '../../../application/learning.store';
-import {Router} from '@angular/router';
-import {MatError} from '@angular/material/form-field';
+import { AfterViewChecked, Component, computed, inject, ViewChild } from '@angular/core';
+import { LearningStore } from '../../../application/learning.store';
+import { Router } from '@angular/router';
+import { MatError } from '@angular/material/form-field';
 import {
   MatCell,
   MatCellDef,
@@ -14,14 +13,14 @@ import {
   MatRow,
   MatRowDef,
   MatTable,
-  MatTableDataSource
+  MatTableDataSource,
 } from '@angular/material/table';
-import {MatButton, MatIconButton} from '@angular/material/button';
-import {MatProgressSpinner} from '@angular/material/progress-spinner';
-import {TranslatePipe} from '@ngx-translate/core';
-import {MatIcon} from '@angular/material/icon';
-import {MatSort, MatSortHeader} from '@angular/material/sort';
-import {MatPaginator} from '@angular/material/paginator';
+import { MatButton, MatIconButton } from '@angular/material/button';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { TranslatePipe } from '@ngx-translate/core';
+import { MatIcon } from '@angular/material/icon';
+import { MatSort, MatSortHeader } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
 
 /**
  * Displays the course collection with table actions.
@@ -47,10 +46,10 @@ import {MatPaginator} from '@angular/material/paginator';
     MatIconButton,
     MatSort,
     MatSortHeader,
-    MatPaginator
+    MatPaginator,
   ],
   templateUrl: './course-list.html',
-  styleUrl: './course-list.css'
+  styleUrl: './course-list.css',
 })
 export class CourseList implements AfterViewChecked {
   readonly store = inject(LearningStore);
@@ -109,4 +108,3 @@ export class CourseList implements AfterViewChecked {
     }
   }
 }
-

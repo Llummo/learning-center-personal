@@ -1,4 +1,3 @@
-
 <h1 class="title">{{ (isEdit ? 'category.edit-title' : 'category.new-title') | translate }}</h1>
 <form [formGroup]="form" (ngSubmit)="submit()">
   <mat-form-field>
@@ -12,4 +11,3 @@
     {{ (isEdit ? 'category.update'  : 'category.create') | translate }}
   </button>
 </form>
-

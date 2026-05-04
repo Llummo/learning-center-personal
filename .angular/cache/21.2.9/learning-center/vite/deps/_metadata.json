@@ -1,0 +1,97 @@
+{
+  "hash": "36f724b9",
+  "configHash": "5bf2d718",
+  "lockfileHash": "3c59a81a",
+  "browserHash": "3a2df0a6",
+  "optimized": {
+    "@angular/cdk/bidi": {
+      "src": "../../../../../../node_modules/@angular/cdk/fesm2022/bidi.mjs",
+      "file": "@angular_cdk_bidi.js",
+      "fileHash": "e08a86e1",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "83390f70",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "22237f53",
+      "needsInterop": false
+    },
+    "@angular/material/button": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/button.mjs",
+      "file": "@angular_material_button.js",
+      "fileHash": "a1371a4d",
+      "needsInterop": false
+    },
+    "@angular/material/button-toggle": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/button-toggle.mjs",
+      "file": "@angular_material_button-toggle.js",
+      "fileHash": "03c8acfe",
+      "needsInterop": false
+    },
+    "@angular/material/toolbar": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/toolbar.mjs",
+      "file": "@angular_material_toolbar.js",
+      "fileHash": "df7d0317",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "9212429e",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "36478bf1",
+      "needsInterop": false
+    },
+    "@ngx-translate/core": {
+      "src": "../../../../../../node_modules/@ngx-translate/core/fesm2022/ngx-translate-core.mjs",
+      "file": "@ngx-translate_core.js",
+      "fileHash": "aff31ecd",
+      "needsInterop": false
+    },
+    "@ngx-translate/http-loader": {
+      "src": "../../../../../../node_modules/@ngx-translate/http-loader/fesm2022/ngx-translate-http-loader.mjs",
+      "file": "@ngx-translate_http-loader.js",
+      "fileHash": "b0529ebd",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-MSLVVL47": {
+      "file": "chunk-MSLVVL47.js"
+    },
+    "chunk-HM2HP5QA": {
+      "file": "chunk-HM2HP5QA.js"
+    },
+    "chunk-5ETV4V3Y": {
+      "file": "chunk-5ETV4V3Y.js"
+    },
+    "chunk-J26HTYLO": {
+      "file": "chunk-J26HTYLO.js"
+    },
+    "chunk-5R52ALT5": {
+      "file": "chunk-5R52ALT5.js"
+    },
+    "chunk-TQC76GQD": {
+      "file": "chunk-TQC76GQD.js"
+    },
+    "chunk-IJW27PYJ": {
+      "file": "chunk-IJW27PYJ.js"
+    },
+    "chunk-DC2X6XV5": {
+      "file": "chunk-DC2X6XV5.js"
+    },
+    "chunk-VMPNWXZH": {
+      "file": "chunk-VMPNWXZH.js"
+    }
+  }
+}
